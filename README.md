@@ -1,3 +1,3 @@
 # ELSpring2019
-This is a template for Spring 2018 Embedded Linux class
+![Image of Logo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
 
