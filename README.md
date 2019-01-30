@@ -12,7 +12,7 @@ This repository documents my class work and projects done for **CPS342**.
   
     ID: [N03442456](http://github.com/N03442456)
   
-    Year: Junior
+    Year: *Junior*
   
 2. **Class Start Date:** Jan 22, 2019
 
