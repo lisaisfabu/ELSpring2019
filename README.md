@@ -1,9 +1,11 @@
 ![Image of Logo](https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg)
+
 # Spring 2019 Embedded Linux Class
 
 This repository documents my class work and projects done for **CPS342**.
 
-1. **Personal Information**
+1. **Personal Information:**
+
     Name: *Lisa Liu*
   
     Major: *Computer Science*
