@@ -10,7 +10,7 @@ This repository documents my class work and projects done for **CPS342**.
   
     Major: *Computer Science*
   
-    ID: [N03442456](http://github.com/N03442456)
+    ID: [N03442456](http://github.com/lisaisfabu)
   
     Year: *Junior*
   
