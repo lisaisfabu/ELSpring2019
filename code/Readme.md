@@ -3,7 +3,7 @@ This is where I put my programs and code
 
 blink.py
 
-   This is a python script to have an LED blink on the breadboard.
+    This is a python script to have an LED blink on the breadboard.
 
 decider.sh
 
