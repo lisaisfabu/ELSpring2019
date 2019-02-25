@@ -62,11 +62,10 @@ def blink(pin):
 def every_min_read():
 	i = 0
 	oldTime = 60
-	readTemp()
+
 	while True:
 		if (time.time() - oldTime) > 59:
-			#os.system('clear')
-			readTemp()
+			logTemp()
 			print_table()
 			old_time = time.time()
 		if curTemp >= 68 and curTemp <= 78:
@@ -79,11 +78,7 @@ def every_min_read():
 try:
 	every_min_read()
 	GPIO.cleanup()
-#print readTemp()
-#logTemp()
-#print_table()
-#time.sleep(5)
-#os.system('clear')
+
 except KeyboardInterrupt:
 	os.system('clear')
 	print('Bobagump')
