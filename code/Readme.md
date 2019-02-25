@@ -1,6 +1,10 @@
 This is where I put my programs and code
 ---
 
+blink.py
+
+   This is a python script to have an LED blink on the breadboard.
+
 decider.sh
 
     This is a decider, due to my indecisiveness it will help me choose what to do.
