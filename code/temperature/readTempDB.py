@@ -33,7 +33,7 @@ def readTemp():
 	curTemp = tempF
 	return [currentTime, tempC, tempF]
 
-con = mydb.connect('/home/lisaisfabu/ELSpring2019/code/temperature.db')
+con = mydb.connect('/home/lisaisfabu/ELSpring2019/code/temperature/temperature.db')
 cur = con.cursor()
 
 def logTemp():
@@ -81,5 +81,5 @@ try:
 
 except KeyboardInterrupt:
 	os.system('clear')
-	print('Bobagump')
+	print('BooYah!')
 	GPIO.cleanup()
