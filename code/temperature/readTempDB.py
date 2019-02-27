@@ -16,9 +16,9 @@ GPIO.setup(redPin, GPIO.OUT)
 
 #LED vars
 #blink duration
-blinkDur = .1
+blinkDur = 0.1
 
-curTemp = 50
+curTemp = 68
 
 """Log Curr Time, temp in celsius and fahrenheit to an sqlite3 database"""
 
@@ -60,21 +60,20 @@ def blink(pin):
 	time.sleep(blinkDur)
 
 def every_min_read():
-	i = 0
-	oldTime = 60
-
+	oldTime = time.time()
+	readTemp()
+	print curTemp
 	while True:
-		if (time.time() - oldTime) > 59:
+		if time.time() - oldTime > 59:
 			logTemp()
+			#readTemp()
 			print_table()
-			old_time = time.time()
+			oldTime = time.time()
 		if curTemp >= 68 and curTemp <= 78:
 			GPIO.output(greenPin,True)
 		else:
-			GPIO.output(greenPin,False)
+			GPIO.output(greenPin, False)
 			blink(redPin)
-
-		i += 1
 try:
 	every_min_read()
 	GPIO.cleanup()
