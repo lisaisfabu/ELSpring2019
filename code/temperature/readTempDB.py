@@ -80,5 +80,6 @@ try:
 
 except KeyboardInterrupt:
 	os.system('clear')
+	con.close()
 	print('BooYah!')
 	GPIO.cleanup()
