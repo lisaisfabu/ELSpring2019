@@ -21,3 +21,7 @@
 **temperature.db**
 
 > This is the temperature database for my readTempDB.py file.
+
+**index.py**
+
+> Run index.py to run the server to see data in graph form. To collect temperature run the readTempDB.py file as well.
