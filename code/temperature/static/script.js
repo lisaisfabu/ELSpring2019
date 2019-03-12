@@ -3,7 +3,7 @@ myclick();
 function myclick(){
     console.log("print");
     
-    $.getJSON('/fetch', function(data) {
+    $.getJSON('/catch', function(data) {
             
         for(var line in data){
             console.log(data[line])
@@ -12,17 +12,17 @@ function myclick(){
         }
 
 
-        $("#basicTable tr").remove();
+        $("#myTable tr").remove();
 
         var trace = {x:[], y:[], mode: 'lines+markers'}
-        mytable = $('<table></table>').attr({ id: "basicTable" });
-        var head = $('<tr></tr>').attr({ class: ["class1"].join(' ') }).appendTo(mytable)
-        $('<th></th>').text("date/time").appendTo(head); 
-        $('<th></th>').text("C").appendTo(head); 
-        $('<th></th>').text("F").appendTo(head); 
+        lisaTable = $('<table></table>').attr({ id: "myTable" });
+        var brain = $('<tr></tr>').attr({ class: ["class1"].join(' ') }).appendTo(lisaTable)
+        $('<th></th>').text("date/time").appendTo(brain); 
+        $('<th></th>').text("C").appendTo(brain); 
+        $('<th></th>').text("F").appendTo(brain); 
 
         for (var line in data) {
-            var row = $('<tr></tr>').attr({ class: ["class1"].join(' ') }).appendTo(mytable);
+            var row = $('<tr></tr>').attr({ class: ["class1"].join(' ') }).appendTo(lisaTable);
             trace.x.push(data[line][0])
 
             trace.y.push(data[line][2]);
@@ -33,7 +33,7 @@ function myclick(){
         }
         var data = [ trace ];
         var layout = {};
-        mytable.appendTo("#box");	 
+        lisaTable.appendTo("#box");	 
 
         Plotly.newPlot('myGraph', data, layout, {showSendToCloud: true});
 
