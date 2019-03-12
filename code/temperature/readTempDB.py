@@ -5,6 +5,9 @@ import time
 import sqlite3 as mydb
 import sys
 
+from flask import Flask, render_template
+app = Flask(__name__)
+
 #assign my pins
 greenPin = 17
 redPin = 13
@@ -74,8 +77,11 @@ def every_min_read():
 		else:
 			GPIO.output(greenPin, False)
 			blink(redPin)
+
+
+
 try:
-	every_min_read()
+	#every_min_read()
 	GPIO.cleanup()
 
 except KeyboardInterrupt:
